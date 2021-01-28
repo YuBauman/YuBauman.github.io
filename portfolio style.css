@@ -1,0 +1,478 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* overflow: auto; */
+}
+
+
+body {
+
+  position: relative;
+  padding-bottom: 50px;
+  min-height: 100vh;
+  font-family: 'Lato';
+}
+header img {
+  width: 170px;
+  height: 50px;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px 5%;
+}
+
+@media screen and (max-width: 600px) {
+  header {
+    display: flex;
+    flex-direction: column;
+  }
+  #navigation ul li {
+    display: flex;
+    flex-direction: column;
+    margin: 15px 0;
+    text-align: center;
+  }
+  .active_page a {
+    color: #f83eaa;
+    border: none !important;
+  }
+  .inactive_page a:hover {
+    font-weight: bold;
+    border: none !important;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .welcome {
+    display: flex;
+    flex-direction: column;
+  }
+  .welcome img {
+    margin-top: 30px;
+  }
+}
+
+header li {
+  list-style: none;
+  display: inline-block;
+  padding: 5px 20px;
+}
+
+a {
+  text-decoration: none;
+  font-family: "Rubik";
+  color: #707070;
+}
+.main_nav {
+  font-size: 0.85em;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+}
+
+.welcome {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px 10% 40px 5%;
+  align-items: center;
+}
+
+.welcome img {
+  width: 320px;
+  height: 419px;
+  margin-left: 20px;
+}
+
+p {
+  color: #585858;
+  font-weight: 300;
+  font-size: 2em;
+  line-height: 1.5;
+}
+
+p#hi {
+  font-size: 70px;
+  font-weight: normal;
+  margin-bottom: 0.8em;
+}
+
+span {
+  color: #f83eaa;
+  font-weight: bold;
+}
+
+footer {
+  background-color: #f0f0f0;
+  display: flex;
+  height: 60px;
+  align-items: center;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  clear: both;
+}
+
+footer li {
+  list-style: none;
+  display: inline-block;
+  padding: 0 20px;
+}
+
+
+footer a {
+  font-size: 0.9em;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+.inactive_page a:hover {
+  border-bottom: 2px solid #f83eaa;
+}
+
+.active_page a {
+  font-weight: bold;
+  border-bottom: 3px solid #f83eaa;
+}
+
+/* Projects overview page */
+
+/* project block */
+.project { 
+  height: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 0 100px;
+}
+
+
+.project img {
+  height: 90%;
+  min-width: 540px;
+}
+
+.project#rijksstudio img, .project#bespoke img {
+  height: 80%;
+  min-width: 630px;
+}
+
+.project#uxapp img {
+  min-width: 273px;
+}
+
+.proj_description {
+  width: 600px;
+}
+
+.proj_description h1 {
+  color: #2e2e2e;
+  font-size: 2em;
+  padding-bottom: 30px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.proj_description p {
+  color: #2e2e2e;
+  font-size: 1.5em;
+  font-weight: 400;
+}
+
+/* blocks background */
+
+.project#bespoke {
+  background-color: #f8f991;
+  padding: 0 50px;
+}
+
+.project#rijksstudio {
+  background-color: #708b75;
+  padding: 0 50px;
+}
+
+.project#uxapp {
+  background-color: #9ab87a;
+}
+
+.project#processing {
+  background-color: #fceade;
+}
+
+.project#illustrator {
+  background-color: #ff8a5b;
+}
+
+/* top block */
+.intro {
+  height: 450px;
+}
+
+.proj_hello {
+  padding: 50px 100px;
+  font-size: 2.5vw;
+}
+
+.proj_hello p {
+  font-weight: bold;
+}
+
+
+
+/* Project showcase page settings */
+
+.project_title {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 2.5em;
+  color: #585858;
+  padding: 50px;
+}
+
+.project_intro {
+  height: 600px;
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  margin: 0 auto;
+}
+
+.project_intro#my_app, .project_intro#processing, .project_intro#illustrator {
+  width: 80%;
+}
+
+.project_intro img {
+  height: 90%;
+}
+.tools, .skills {
+    padding-top: 100px;
+}
+.tools h1, .skills h1{
+    margin-bottom: 1em;
+    color: #707070;
+    font-size: 2em;
+}
+
+.tools ul, .skills ul {
+    list-style: none;
+    color: #f83eaa;
+    font-size: 1em;
+}
+
+.project_main {
+    width: 70%;
+    position: relative;
+    margin: 0 auto;
+    padding-bottom: 100px;
+}
+
+.project_main h1, .project_main h2 {
+    color: #585858;
+    margin: 50px 0 20px 0;
+}
+.project_main h1 {
+    text-transform: uppercase;
+    font-size: 3em;
+    text-decoration: underline;
+}
+
+.project_main p {
+    position: relative;
+    margin: 0 auto;
+    font-size: 1.3em;
+}
+
+.project_main h2 {
+    font-size: 2.5em;
+}
+
+
+.project_main img{
+    width: 90%;
+    display: block;
+    margin: 20px auto;
+
+}
+.project_main ul, .project_main ol {
+    padding-left: 50px;
+    padding-bottom: 20px;
+    font-weight: 300;
+    line-height: 1.5;
+}
+.project_main li {
+    font-size: 1.3em;
+    color: #585858;
+}
+
+/* Project showcase page settings */
+
+.project_main h3 {
+    color: #f83eaa;
+    margin: 20px 0;
+    font-size: 1.5em;
+}
+
+.project_main h4 {
+    font-size: 1.5em;
+    color: #585858;
+    padding-top: 15px;
+    text-decoration: underline;
+    margin: 20px 0;
+} 
+
+img.smaller_pic {
+  width: 60%;
+}
+
+
+.project_main a {
+  color: #f83eaa;
+  font-weight: bold;
+  font-family: 'Lato';
+}
+
+/* My app project styling */
+
+.ui_example, .screen_example {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.left_side{
+  padding-right: 150px;
+}
+
+.ui_example img, {
+  width: 100%;
+}
+
+.screen_example img {
+  width: 50%;
+}
+
+.screen_example {
+  padding-top: 50px;
+}
+
+/* processing project styling */
+
+.processing_example {
+  display:
+  flex;
+  justify-content: space-between;
+}
+.processing_example img {
+  width: 30%;
+}
+
+.processing_example video {
+  width: 80%;
+  display: block;
+  margin: 20px auto;
+}
+
+/* illustrator project styling */
+.logo_bulb {
+  display: flex;
+  align-items: center;
+}
+
+.logo_bulb img {
+  width: 30%;
+  padding-right: 50px;
+}
+
+/* About page styling */
+
+.main_info {
+  padding-bottom: 100px;
+}
+.about_intro {
+  width: 80%;
+  margin: 50px auto;
+  font-size: 1.8vw;
+}
+.personal_photos {
+  width: 100%;
+  display: flex;
+  padding: 20px 0;
+}
+
+.personal_photos img {
+  width: 20%;
+}
+.about_description {
+  width: 70%;
+  margin: 20px auto;
+  font-size: 0.9vw;
+}
+
+.about_description ul {
+  font-size: 2vw;
+  color: #585858;
+  list-style: none;
+  font-weight: 300;
+
+}
+
+/* Contact page styling */
+
+.contact_hello {
+  position: relative;
+  margin: 50px auto;
+  text-align: center;
+  transition: all 1s ease-in-out;
+}
+.contact_hello h1{
+  font-size: 60px;
+  color: #585858;
+}
+
+form {
+  margin-top: 80px;
+  transition: all 2s ease-in-out;
+}
+
+.form_control {
+  width: 30%;
+  background: transparent;
+  outline: none;
+  border: 2px solid #FA6BBE;
+  border-radius: 10px;
+  color: #000;
+  font-size: 16px;
+  margin-bottom: 16px;
+  padding: 10px;
+  font-family: 'Lato';
+}
+
+input {
+  height: 50px;
+}
+
+form .send{
+  background-color: #FA6BBE;
+  font-weight: bold;
+  color: #FFF;
+  letter-spacing: 2px;
+  font-size: 18px;
+  border-color: transparent;
+
+}
+
+form .send:hover {
+  background-color: #f83eaa;
+}
+
+textarea, input {
+  max-width: 600px;
+  min-width: 300px;
+}
