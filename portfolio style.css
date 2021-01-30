@@ -429,9 +429,11 @@ img.smaller_pic {
 .about_description {
   width: 70%;
   margin: 40px auto;
-  font-size: 0.9vw;
 }
 
+.about_description p {
+  font-size: 1.9vw;
+}
 .about_description ul {
   font-size: 2vw;
   color: #585858;
