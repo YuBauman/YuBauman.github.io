@@ -38,6 +38,12 @@ a {
   color: #707070;
 }
 
+span {
+  color: #f83eaa;
+  font-weight: bold;
+}
+
+/* navigation menu */
 .inactive_page a:hover {
   border-bottom: 2px solid #f83eaa;
 }
@@ -82,11 +88,6 @@ p#hi {
   margin-bottom: 0.8em;
 }
 
-span {
-  color: #f83eaa;
-  font-weight: bold;
-}
-
 /* Footer styling */
 
 footer {
@@ -118,6 +119,7 @@ footer a:hover {
   text-decoration: underline;
 }
 
+/* Changes of header/navigation menu/footer of screen size < 600px */
 @media screen and (max-width: 600px) {
   header {
     display: flex;
@@ -145,6 +147,7 @@ footer a:hover {
   }
 }
 
+/* Change of landing page of screen < 800px */
 @media screen and (max-width: 800px) {
   .welcome {
     display: flex;
@@ -165,6 +168,7 @@ footer a:hover {
   grid-template-rows: repeat(auto-fit, 1fr);
 }
 
+/* Top block with projects presentation */
 .overview_intro {
   padding: 2% 7%;
   font-size: 2.5vw;
@@ -174,6 +178,7 @@ footer a:hover {
   font-weight: bold;
 }
 
+/* Project block styling */
 .project {
   display: flex;
   padding: 2% 5%;
@@ -244,7 +249,7 @@ footer a:hover {
   width: 70%;
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: start;
   position: relative;
   margin: 0 auto;
   flex-wrap: wrap-reverse;
@@ -270,6 +275,7 @@ footer a:hover {
   font-size: 1em;
 }
 
+/* Main content of project description*/
 .project_main {
   width: 70%;
   position: relative;
@@ -394,7 +400,7 @@ img.smaller_pic {
   padding-right: 50px;
 }
 
-/* Change of project showcase page under 600px */
+/* Change of project showcase page of screen < 600px */
 @media screen and (max-width: 600px) {
   .project_main h1 {
     font-size: 2em;
@@ -476,6 +482,11 @@ img.smaller_pic {
   text-align: center;
 }
 
+.work ul {
+  line-height: 2;
+  font-size: 16px;
+}
+
 .work_experience h2,
 .work_experience h3 {
   padding-bottom: 20px;
@@ -494,11 +505,6 @@ img.smaller_pic {
 
 .work#first_work {
   background-color: #f8f991;
-}
-
-.work ul {
-  line-height: 2;
-  font-size: 16px;
 }
 
 .work#second_work {
