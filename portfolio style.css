@@ -286,7 +286,7 @@ footer a:hover {
 .project_main p {
   position: relative;
   margin: 0 auto;
-  font-size: 1.9vw;
+  font-size: 1.7vw;
 }
 
 .project_main h1,
@@ -297,22 +297,22 @@ footer a:hover {
 
 .project_main h1 {
   text-transform: uppercase;
-  font-size: 3em;
+  font-size: 3vw;
   text-decoration: underline;
 }
 
 .project_main h2 {
-  font-size: 2.5em;
+  font-size: 2vw;
 }
 
 .project_main h3 {
   color: #f83eaa;
   margin: 20px 0;
-  font-size: 1.5em;
+  font-size: 1.9vw;
 }
 
 .project_main h4 {
-  font-size: 1.5em;
+  font-size: 1.8vw;
   color: #585858;
   padding-top: 15px;
   text-decoration: underline;
@@ -333,7 +333,7 @@ footer a:hover {
   line-height: 1.5;
 }
 .project_main li {
-  font-size: 1.3em;
+  font-size: 1.7vw;
   color: #585858;
 }
 
