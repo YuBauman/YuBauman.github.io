@@ -260,7 +260,6 @@ footer a:hover {
   align-items: start;
   position: relative;
   margin: 0 auto;
-  flex-wrap: wrap-reverse;
 }
 
 .project_intro img {
