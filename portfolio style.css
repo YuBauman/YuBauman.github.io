@@ -265,14 +265,14 @@ footer a:hover {
 .skills h1 {
   margin-bottom: 1em;
   color: #707070;
-  font-size: 2em;
+  font-size: 2.3vw;
 }
 
 .tools ul,
 .skills ul {
   list-style: none;
   color: #f83eaa;
-  font-size: 1em;
+  font-size: 1.5vw;
 }
 
 /* Main content of project description*/
@@ -286,7 +286,7 @@ footer a:hover {
 .project_main p {
   position: relative;
   margin: 0 auto;
-  font-size: 1.3em;
+  font-size: 1.9vw;
 }
 
 .project_main h1,
