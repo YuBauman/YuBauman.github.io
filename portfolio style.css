@@ -64,8 +64,6 @@ a {
 }
 
 .welcome img {
-  /* width: 320px;
-  height: 419px; */
   width: 30%;
   height: auto;
   margin-left: 20px;
@@ -368,7 +366,7 @@ img.smaller_pic {
   padding-top: 50px;
 }
 
-/* processing project styling */
+/* Processing project styling */
 /* Blocks of example images/video */
 .processing_example {
   display: flex;
